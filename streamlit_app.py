@@ -44,6 +44,6 @@ if ingredients_list:
                         ,
                         '""" + name_on_order + """')           
                 """
-session.sql(my_insert_stmt).collect()
-st.success('Your Smoothie is ordered , '+ name_on_order +' !' ,icon="✅")
+    session.sql(my_insert_stmt).collect()
+    st.success('Your Smoothie is ordered , '+ name_on_order +' !' ,icon="✅")
 
